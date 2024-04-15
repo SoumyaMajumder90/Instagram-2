@@ -1,0 +1,38 @@
+/* PostComponent.css */
+
+.post-container {
+  background-color: aliceblue;
+  color: black;
+ }
+ 
+ .post-image {
+   width: 100%;
+   height: auto;
+   border-radius: 8px; /* Add border radius for rounded corners */
+ }
+ 
+ .post-actions {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 15px; /* Increase margin top for more space between post content and actions */
+ }
+ 
+ .post-actions button {
+   border: none;
+   cursor: pointer;
+   outline: none;
+   font-size: 16px; /* Increase font size for better readability */
+ }
+ 
+ .like-button,
+ .comment-button {
+   display: flex;
+   align-items: center;
+   color: #333;
+ }
+ 
+ .like-button i,
+ .comment-button i {
+   margin-right: 8px; /* Increase margin right for more space between icon and text */
+ }
+ 

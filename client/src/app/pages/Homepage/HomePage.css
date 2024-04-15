@@ -1,0 +1,101 @@
+.homepage-container {
+  display: flex;
+  justify-content: center;
+  
+}
+.left-sidebar {
+  width: 245px;
+  background-color: #cd7b7b;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  
+}
+/* Main content container (including story and post components) */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 245px); /* Subtract the width of the left panel from 100% */
+  margin-left: 245px; /* Adjust the margin to account for the width of the left panel */
+}
+story-component {
+  margin-bottom: 20px;
+  width: 70%;
+  max-width: 500px; /* Adjust as needed */
+}
+
+
+.story-component h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.stories-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  story-component {
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 600px; /* Adjust as needed */
+  margin: 150px;
+}
+
+
+.story-component h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.stories-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.story {
+  width: 80px;
+  text-align: center;
+}
+
+.story img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.story p {
+  font-size: 14px;
+}
+}
+
+
+
+
+.post-container {
+  margin-bottom: 30px; /* Increase margin bottom for more space between posts */
+  padding: 20px; /* Increase padding for more space around the post content */
+  width: 100%; /* Adjust width as needed */
+  max-width: 600px; /* Set maximum width for better responsiveness */
+  background-color: white; /* Add background color for better visibility */
+  border-radius: 8px; /* Add border radius for rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+  margin: 100px;
+  
+}
+
+.post-component {
+  margin: 0 auto; /* Center the post component horizontally */
+  width: 100%; /* Ensure the post component takes up the full width */
+  max-width: 600px; /* Set maximum width for better responsiveness */
+  background-color: aqua;
+  
+}
+/* Right panel */
+.right-panel {
+  width: 450px;
+  background-color: #f0f0f0;
+  padding: 20px;
+}

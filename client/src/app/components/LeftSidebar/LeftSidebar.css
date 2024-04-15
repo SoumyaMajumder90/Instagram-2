@@ -1,0 +1,26 @@
+.left-sidebar {
+    width: 300px; /* Adjust width as needed */
+    height: 100vh; /* Set height to cover full viewport height */
+    background-color: #f0f0f0;
+    padding: 20px;
+    font-size: 20px;
+    color: black;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+     /* Add padding to the bottom of the logo container */
+  }
+  
+  ul {
+    padding-left: 0; /* Remove default padding from the ul */
+    list-style-type: none; /* Remove default list styling */
+  }
+  
+  li {
+    padding: 15px 0; /* Add padding between list items */
+  }
