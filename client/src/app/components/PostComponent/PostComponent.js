@@ -8,7 +8,7 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import './PostComponent.css'; // Import the CSS file
 
-const socket = io.connect("http://localhost:5000");
+const socket = io.connect("https://instagram-2.onrender.com");
 
 const PostComponent = () => {
   const [posts, setPosts] = useState([]);
@@ -29,7 +29,7 @@ const PostComponent = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/allposts');
+        const response = await axios.get('https://instagram-2.onrender.com/api/allposts');
         setPosts(response.data || []); // Ensure posts is always initialized as an array
       } catch (error) {
         console.error(error);
@@ -118,7 +118,7 @@ const PostComponent = () => {
     <div>
       {posts.map((post) => (
         <div className="post-container" key={post._id}>
-          <img src={`http://localhost:5000/${post.imageUrl}`} alt="Post" className="post-image" />
+          <img src={`https://instagram-2.onrender.com/${post.imageUrl}`} alt="Post" className="post-image" />
           <div className="post-description">{post.description}</div>
           <div className="post-actions">
             <button className="like-button" onClick={() => handleLike(post._id)}>

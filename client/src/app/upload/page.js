@@ -22,7 +22,7 @@ const Upload = () => {
       formData.append('profileImage', file); // Append the file to FormData
 
       // Upload the picture
-      const response = await axios.post('http://localhost:5000/upload', formData, {
+      const response = await axios.post('https://instagram-2.onrender.com/upload', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
@@ -34,7 +34,7 @@ const Upload = () => {
       const imageUrl = response.data.path;
 
       // Add a comment
-      const newPost = await axios.post('http://localhost:5000/api/posts', { imageUrl, description });
+      const newPost = await axios.post('https://instagram-2.onrender.com/api/posts', { imageUrl, description });
 
       console.log('New post created:', newPost.data);
 

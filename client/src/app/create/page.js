@@ -18,7 +18,7 @@ const Create = () => {
   const handleCreatePost = async () => {
     try {
       // Send a POST request to create a new post with the image URL and description
-      const response = await axios.post('http://localhost:5000/api/posts', { imageUrl: imgUrl, description });
+      const response = await axios.post('https://instagram-2.onrender.com/api/posts', { imageUrl: imgUrl, description });
 
       console.log('New post created:', response.data);
 
