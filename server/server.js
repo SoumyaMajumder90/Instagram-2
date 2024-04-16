@@ -24,7 +24,7 @@ const storage = multer.diskStorage({
 const upload = multer({storage})
 const io = socketIo(server, {
     cors:{
-        origin: "https://instagram-2-wine.vercel.app/", 
+        origin: "https://instagram-2-wine.vercel.app", 
         
     }
 
