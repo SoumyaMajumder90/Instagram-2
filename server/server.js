@@ -89,7 +89,7 @@ io.on('connection', (socket) => {
   });
 }); 
 const corsOption = {
-    origin: "/*",
+    origin: "https://instagram-2-wine.vercel.app",
     methods : "GET, POST, PUT,DELETE, PATCH,HEAD",
     credentials: true,
 };
