@@ -1,8 +1,8 @@
 // pages/HomePage.js
 
 import React from 'react';
-import { Container, Grid } from '@mui/material';
-import Header from '../../components/Header';
+
+
 import PostComponent from '../../components/PostComponent/PostComponent';
 import Story from '../../components/Story/Story';
 import RightPanel from '../../components/RightPanel/RightPanel';

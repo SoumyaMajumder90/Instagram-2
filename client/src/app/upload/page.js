@@ -1,8 +1,8 @@
 // Upload.js
 "use client"
-import React, { useState } from 'react';
+import { useState } from 'react';
 import axios from 'axios';
-
+import './upload.css';
 const Upload = () => {
   const [file, setFile] = useState(null);
   const [description, setDescription] = useState('');
