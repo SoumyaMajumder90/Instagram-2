@@ -24,7 +24,7 @@ const storage = multer.diskStorage({
 const upload = multer({storage})
 const io = socketIo(server, {
     cors:{
-        origin: "http://localhost:3000",
+        origin: "https://instagram-2-wine.vercel.app/", 
         
     }
 
@@ -89,7 +89,7 @@ io.on('connection', (socket) => {
   });
 }); 
 const corsOption = {
-    origin: "http://localhost:3000",
+    origin: "/*",
     methods : "GET, POST, PUT,DELETE, PATCH,HEAD",
     credentials: true,
 };
